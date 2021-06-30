@@ -30,7 +30,7 @@ const Weather = (props) => {
  
 
     const getdata = async () =>{
-        const data=await axios(`https://api.openweathermap.org/data/2.5/weather?q=${searchinput}&APPID=393e346e7cda6cd192a950a31cb11307`);
+        const data=await axios(`https://api.openweathermap.org/data/2.5/weather?q=${searchinput}&APPID=496e4cf76f90cdb5f3767570579a6097`);
         setData(data);
         const country=(data.data.sys.country);
         const temp=Math.floor(data.data.main.temp-273.15);
